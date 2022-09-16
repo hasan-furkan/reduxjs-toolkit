@@ -1,4 +1,4 @@
-import { createSlice } from "@reduxjs/toolkit";
+import {createSlice} from "@reduxjs/toolkit";
 
 export const todosSlice = createSlice({
     name: "todos",
@@ -14,7 +14,8 @@ export const todosSlice = createSlice({
                 title: "Read a book",
                 completed: true,
             } 
-        ]
+        ],
+        activeFilter: 'all',
     },
     reducers: {
         addTodo: (state, action) => {
@@ -30,10 +31,18 @@ export const todosSlice = createSlice({
             const id= action.payload
             const filtered = state.items.filter((item) => item.id !== id) 
             state.items = filtered
+        },
+        changeActiveFilter: (state, action) => {
+            state.activeFilter = action.payload
+        },
+        clearCompleted: state => {
+            const filtered = state.items.filter((item) => item.completed === false)
+            state.items = filtered
+            // state.items = state.items.filter((item) => item.completed === false)
         }
     }
 });
 
-export const {addTodo , toggle, destroy} = todosSlice.actions
+export const {addTodo , toggle, destroy, changeActiveFilter, clearCompleted} = todosSlice.actions
 
 export default todosSlice.reducer;
