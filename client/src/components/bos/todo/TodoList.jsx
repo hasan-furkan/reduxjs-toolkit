@@ -1,7 +1,7 @@
 import React, {useEffect} from 'react'
 import {useSelector, useDispatch} from "react-redux"
 import {destroy, selectFilteredTodos, getTodosAsync, toggleTodoAsync, removeItemAsync} from '../../../redux/todos/todosSlice';
-import Loading from "./Loading";
+import Loading from "../../Loading";
 
 function TodoList() {
     const dispatch = useDispatch();
