@@ -20,13 +20,13 @@ function ContentFooter() {
 
     <ul className="filters">
         <li>
-            <a href="client/src/components/ContentFooter#/" className={activeFilter === "all" ? "selected" : ""} onClick={()=> dispatch(changeActiveFilter("all"))}>All</a>
+            <a href="#/" className={activeFilter === "all" ? "selected" : ""} onClick={()=> dispatch(changeActiveFilter("all"))}>All</a>
         </li>
         <li>
-            <a href="client/src/components/ContentFooter#/" className={activeFilter === "active" ? "selected" : ""} onClick={()=> dispatch(changeActiveFilter("active"))}>Active</a>
+            <a href="#/" className={activeFilter === "active" ? "selected" : ""} onClick={()=> dispatch(changeActiveFilter("active"))}>Active</a>
         </li>
         <li>
-            <a href="client/src/components/ContentFooter#/" className={activeFilter === "completed" ? "selected" : ""} onClick={()=> dispatch(changeActiveFilter("completed"))}>Completed</a>
+            <a href="#/" className={activeFilter === "completed" ? "selected" : ""} onClick={()=> dispatch(changeActiveFilter("completed"))}>Completed</a>
         </li>
     </ul>
 
