@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import {useDispatch} from "react-redux";
-import {addTodosAsync} from "../redux/todos/todosSlice"
+import {addTodosAsync} from "../../../redux/todos/todosSlice"
 import { nanoid } from "@reduxjs/toolkit";
 
 function Form() {

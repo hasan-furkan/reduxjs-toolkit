@@ -1,7 +1,7 @@
 import React from 'react'
 
 import {useSelector, useDispatch} from "react-redux";
-import {changeActiveFilter, clearCompleted, selectTodos} from "../redux/todos/todosSlice";
+import {changeActiveFilter, clearCompleted, selectTodos} from "../../../redux/todos/todosSlice";
 
 function ContentFooter() {
 
@@ -20,13 +20,13 @@ function ContentFooter() {
 
     <ul className="filters">
         <li>
-            <a href="#/" className={activeFilter === "all" ? "selected" : ""} onClick={()=> dispatch(changeActiveFilter("all"))}>All</a>
+            <a href="client/src/components/bos/todo/ContentFooter#/" className={activeFilter === "all" ? "selected" : ""} onClick={()=> dispatch(changeActiveFilter("all"))}>All</a>
         </li>
         <li>
-            <a href="#/" className={activeFilter === "active" ? "selected" : ""} onClick={()=> dispatch(changeActiveFilter("active"))}>Active</a>
+            <a href="client/src/components/bos/todo/ContentFooter#/" className={activeFilter === "active" ? "selected" : ""} onClick={()=> dispatch(changeActiveFilter("active"))}>Active</a>
         </li>
         <li>
-            <a href="#/" className={activeFilter === "completed" ? "selected" : ""} onClick={()=> dispatch(changeActiveFilter("completed"))}>Completed</a>
+            <a href="client/src/components/bos/todo/ContentFooter#/" className={activeFilter === "completed" ? "selected" : ""} onClick={()=> dispatch(changeActiveFilter("completed"))}>Completed</a>
         </li>
     </ul>
 
