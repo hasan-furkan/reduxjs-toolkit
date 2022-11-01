@@ -1,12 +1,11 @@
-import { Routes, Route, Link, BrowserRouter } from "react-router-dom";
-import Home from "./components/Home";
-import Detail from "./components/Detail";
+import { Routes, Route, BrowserRouter } from "react-router-dom";
+import Contacts from "./components/Contacts";
+
 function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/char/:char_id" element={<Detail />} />
+        <Route path="/" element={<Contacts /> }  />
       </Routes>
     </BrowserRouter>
   );

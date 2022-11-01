@@ -1,9 +1,9 @@
 import {useEffect} from "react";
 import Masonry from "react-masonry-css";
 import {useDispatch, useSelector} from "react-redux";
-import {fetchCharacters} from "../redux/breakingbad/characterSlice";
-import Loading from "./Loading";
-import Error from "./Error";
+import {fetchCharacters} from "../../../redux/breakingbad/characterSlice";
+import Loading from "../../Loading";
+import Error from "../../Error";
 import {Link} from "react-router-dom";
 
 export default function Home() {
